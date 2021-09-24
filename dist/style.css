@@ -36,6 +36,9 @@ button {
 
 button:hover {
   cursor: pointer;
+}
+
+button:active {
   background-color: #161220;
 }
 
