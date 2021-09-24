@@ -4,12 +4,12 @@ const clearBtn = document.getElementById('clear');
 const numberBtns = Array.from(document.querySelectorAll('.numbers')); 
 const operatorBtns = Array.from(document.querySelectorAll('.operators'));
 const equalsBtn = document.getElementById('equals');
-const decimalBtn = document.getElementById('decimal'); 
+const decimalBtn = document.getElementById('decimal');  
 const display = document.getElementById('display');
 
 let num1 = 0; 
 let num2 = 0; 
-let operator = 0;  
+let operator = 0;   
 
 // event listeners 
 
