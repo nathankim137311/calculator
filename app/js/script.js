@@ -8,8 +8,7 @@ const display = document.getElementById('display');
 
 let num1 = 0; 
 let num2 = 0; 
-let operator = 0; 
-let timesClicked = 0; 
+let operator = 0;  
 
 // event listeners 
 // display converts to empty string 
@@ -20,11 +19,7 @@ clearBtn.addEventListener('click', () => {
 // all number buttons display text content 
 numberBtns.forEach((currentBtn) => {
   currentBtn.addEventListener('click', (e) => {
-    if (timesClicked === 0) {
       display.textContent += e.target.textContent; 
-    } else {
-      display.textContent = e.target.textContent; 
-    }
   });
 });
 
@@ -52,9 +47,6 @@ operatorBtns.forEach((currentBtn) => {
 // equals button 
 equalsBtn.addEventListener('click', () => {
   num2 = display.textContent; 
-  console.log(num2); 
-  console.log(operator);
-  console.log(num1); 
   display.textContent = operate(operator, num1, num2);
 });
 

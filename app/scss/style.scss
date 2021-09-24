@@ -28,7 +28,7 @@
   justify-content: flex-end;
   align-items: flex-end;
   border-radius: 3px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   width: 100%;
   height: 75px;
 }
@@ -36,11 +36,31 @@
 .button-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   align-items: center;
   justify-content: center;
-  height: 80%;
+  height: 70%;
   width: 100%;
+}
+
+#clear {
+  background-color: #4abcad;
+}
+
+#pos-neg {
+  background-color: #4abcad;
+}
+
+#modulus {
+  background-color: #4abcad;
+}
+
+#equals {
+  background-color: #f8b732;
+}
+
+#zero {
+  grid-column: 1 / span 2;
 }
 
 .operators {
